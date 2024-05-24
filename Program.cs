@@ -13,7 +13,7 @@ namespace Ultra_Bigger_Calcuator
 
 
             var strings = GetBigger(bgInt1, bgInt2);
-            Cikartici(strings.data1, strings.data2, strings.negative);
+            Cikartici(strings.data1, strings.data2, strings.negative); // basamak kontrolü yapılıcak eğer en büyük basamağa sahip sayı altta ise cevap - olarak gösterilicek. method başlar ve büyük sayı testip edilir altta ise üste alınır ve işlem hiç bir şey değilmiş gibi devam eder ve başına eksi katılır.
             Console.ReadKey();
 
 
@@ -208,7 +208,10 @@ namespace Ultra_Bigger_Calcuator
 
                     if (one < second)
                     {
+                        //     Console.WriteLine((one + 10) - second);
                         sum = (one + 10) - second;
+
+
                         azalt = true;
                     }
                     else
